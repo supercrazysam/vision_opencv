@@ -1,3 +1,4 @@
+set (CMAKE_CXX_STANDARD 11)
 cmake_minimum_required(VERSION 2.8)
 project(cv_bridge)
 
@@ -13,7 +14,7 @@ if(NOT ANDROID)
 else()
 find_package(Boost REQUIRED)
 endif()
-find_package(OpenCV 3 REQUIRED
+find_package(OpenCV REQUIRED
   COMPONENTS
     opencv_core
     opencv_imgproc
